@@ -92,15 +92,22 @@ label {
   padding: 0 18px;
 }
 
-input {
+input, button {
   font-weight: 400;
-  /* flex: 0 0 200px; */
   height: 3rem;
   width: 330px;
-  border: 1px solid black;
+  border: 0.5px solid rgba(128, 128, 128, 0.541);
   border-radius: 5px;
 }
 
+button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  color:white;
+  background-color:rgb(56, 204, 140) ;
+  box-shadow: inset 0px -3px 0px 0px #39BA82
+}
 
 
 /* .footer {
