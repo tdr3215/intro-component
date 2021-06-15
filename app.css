@@ -4,11 +4,13 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   background-image: url(/images/bg-intro-desktop.png);
   background-color: rgb(255, 122, 122);
-  height: 100vh;
+  min-height: 100vh;
   box-sizing: border-box;
 }
 
@@ -22,10 +24,10 @@ h1 {
 
 .main {
   width: 100%;
-  height: 100vh;
+  height: 850px;
   position: absolute;
   display: flex;
-  flex-direction: row;
+  flex:1;
   justify-content: center;
   align-items: center;
 }
@@ -33,7 +35,7 @@ h1 {
 .intro-card {
   color: white;
   display: flex;
-  flex: 1;
+  /* flex: 1; */
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
@@ -51,7 +53,7 @@ h1 {
   flex: 1;
   flex-direction: column;
   position: relative;
-  height: 500px;
+  height: 550px;
   max-width: 500px;
   align-items: center;
   justify-content: space-evenly;
@@ -85,21 +87,20 @@ margin-right: 5px;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  flex: 2;
+  flex: 1;
   text-align: center;
   border-radius: 8px;
   width: 100%;
   padding: 2rem auto;
+  box-shadow: 0px 8px 0px 0px rgba(5, 4, 4, 0.16);
+
 }
 
 label {
   display: flex;
-  /* flex-direction: row; */
   justify-content: space-evenly;
   align-items: center;
   max-width: 400px;
-  /* padding: 5px auto; */
-
   line-height: 20px;
 }
 
@@ -113,9 +114,10 @@ input,
 button {
   font-weight: 400;
   height: 3rem;
-  width: 330px;
+  width: 400px;
   border: 0.5px solid rgba(128, 128, 128, 0.541);
   border-radius: 5px;
+  padding:1rem auto;
 }
 
 button {
@@ -129,11 +131,14 @@ button {
 
 #tas {
   color: hsl(0, 100%, 74%);
+  margin-left: 3px;
+  font-weight: 700;
 }
 
 
 .confirm span {
   margin-top: 5px;
+  color: rgba(128, 128, 128, 0.514);
 }
 
 .confirm {
@@ -144,6 +149,11 @@ button {
   line-height: 10px;
   flex-wrap: wrap;
 }
-/* .footer {
-  position: relative;
-} */
+
+/* Make the footer sticky */
+
+.footer {
+  position:relative;
+  /* width: 100%; */
+flex: 0;
+}
