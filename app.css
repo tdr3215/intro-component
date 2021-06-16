@@ -58,7 +58,7 @@ h1 {
   flex: 1;
   flex-direction: column;
   position: relative;
-  height: 550px;
+  height: 30rem;
   max-width: 500px;
   align-items: center;
   justify-content: space-evenly;
@@ -96,7 +96,6 @@ margin-right: 5px;
   text-align: center;
   border-radius: 8px;
   width: 100%;
-  padding: 2rem auto;
   box-shadow: 0px 8px 0px 0px rgba(5, 4, 4, 0.16);
 
 }
@@ -118,8 +117,8 @@ label {
 input,
 button {
   font-weight: 400;
-  height: 3rem;
-  width: 400px;
+  height: 2rem;
+  width: 15rem;
   border: 0.5px solid rgba(128, 128, 128, 0.541);
   border-radius: 5px;
   /* padding:1rem auto; */
@@ -142,17 +141,19 @@ button {
 
 
 .confirm span {
-  margin-top: 5px;
+  margin-top: 50px;
   color: rgba(128, 128, 128, 0.514);
 }
 
 .confirm {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   font-size: 8px;
   font-weight: 600;
   line-height: 10px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 /* Make the footer sticky */
@@ -165,4 +166,20 @@ button {
   /* margin-top: -100px; */
 flex-shrink: 0;
 /* padding: 20px; */
+}
+
+
+@media all and (max-width:480px) {
+ 
+body {
+  display: flex;
+  flex-direction: column;
+ background: url(/images/bg-intro-mobile.png);
+ background-color: rgb(255, 122, 122);
+  }
+
+.main {
+  display: block;
+}
+
 }
