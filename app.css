@@ -158,7 +158,6 @@ button {
 
 
 .footer {
-
   position:relative;
   width: 100%;
 flex-shrink: 0;
@@ -172,6 +171,7 @@ body {
   flex-direction: column;
  background: url(/images/bg-intro-mobile.png);
  background-color: rgb(255, 122, 122);
+ margin-bottom: 0;
   }
 
 .main {
@@ -179,20 +179,33 @@ body {
 }
 
 h1 {
-  font-size:25px;
+  font-size:26px;
 }
 
 p {
   font-size: 14px;
 }
 
+.trial-card {
+  height: 80px;
+  box-shadow: 0px 8px 0px 0px rgba(5, 4, 4, 0.16);
+}
+
 .intro-card{
-  height: 20rem;
+  height: 18rem;
   text-align: center;
   line-height: 30px;
 align-items: center;
 justify-content: space-evenly;
 margin: auto 0;
+}
+
+input, button {
+  width: 18rem;
+}
+
+.footer {
+top: 500px;
 }
 
 }
