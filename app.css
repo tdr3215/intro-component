@@ -58,7 +58,7 @@ h1 {
   flex: 1;
   flex-direction: column;
   position: relative;
-  height: 30rem;
+  height: 30.5rem;
   max-width: 500px;
   align-items: center;
   justify-content: space-evenly;
@@ -120,7 +120,7 @@ input,
 button {
   font-weight: 400;
   height: 3rem;
-  width: 23rem;
+  width: 25rem;
   border: 0.5px solid rgba(128, 128, 128, 0.541);
   border-radius: 5px;
   /* padding:1rem auto; */
