@@ -13,9 +13,15 @@ should say *"Looks like this is not an email"*
 const input = document.querySelectorAll('input');
 
 
+//for loop inside of a submit event listener
 
 
 
+// Adding the error spans/div to the page
+/*
+<div>
 
-// Adding the error spans to the page
-//  <em><span id="error-span">First Name cannot be empty</span></em>
+<em><span id="error-span">First Name cannot be empty</span></em>
+
+</div>
+*/

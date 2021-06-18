@@ -47,18 +47,24 @@
 
 
       <!-- Information about user Section-->
-      <div class="info-section">
+      <div class="info-section error" >
         <div class="trial-card">
           <span class="bold" id="free">Try it free 7 days</span><span>then $20/mo. thereafter</span>
           </div>
        
        <form action="#" class="input-card error">
+         <div class="error">
           <label><input type="text" placeholder="First Name" /></label>
           <!-- This span is only for example styling -->
           <em><span id="error-span">First Name cannot be empty</span></em>
+        </div>
           <label><input type="text" placeholder="Last Name" /></label>
+          <!-- <em><span id="error-span">First Name cannot be empty</span></em> -->
           <label><input type="email" placeholder="Email" autocomplete="username" id="email"/></label>
-          <label><input type="password" placeholder="Password" autocomplete="current-password" /></label>
+          <!-- <em><span id="error-span">First Name cannot be empty</span></em> -->
+           <label><input type="password" placeholder="Password" autocomplete="current-password" /></label>
+          <!-- <em><span id="error-span">First Name cannot be empty</span></em> -->
+
           <div class="confirm">
             <button type="submit">Claim your free trial</button>
           <span>By clicking the button, you are agreeing to our</span>
