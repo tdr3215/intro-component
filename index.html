@@ -52,11 +52,13 @@
           <span class="bold" id="free">Try it free 7 days</span><span>then $20/mo. thereafter</span>
           </div>
        
-       <form class="input-card">
+       <form action="#" class="input-card error">
           <label><input type="text" placeholder="First Name" /></label>
+          <!-- This span is only for example styling -->
+          <em><span id="error-span">First Name cannot be empty</span></em>
           <label><input type="text" placeholder="Last Name" /></label>
-          <label><input type="email" placeholder="Email" /></label>
-          <label><input type="password" placeholder="Password" /></label>
+          <label><input type="email" placeholder="Email" autocomplete="username" id="email"/></label>
+          <label><input type="password" placeholder="Password" autocomplete="current-password" /></label>
           <div class="confirm">
             <button type="submit">Claim your free trial</button>
           <span>By clicking the button, you are agreeing to our</span>
@@ -77,5 +79,7 @@
       </p>
     </footer>
     
+<script src="app.js"></script>
+
   </body>
 </html>
