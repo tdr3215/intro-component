@@ -53,21 +53,23 @@
           </div>
        
        <form action="#" class="input-card error">
-         <div class="error">
-          <label><input type="text" placeholder="First Name" /></label>
-          <!-- This span is only for example styling -->
-          <em><span id="error-span">First Name cannot be empty</span></em>
-        </div>
-          <label><input type="text" placeholder="Last Name" /></label>
-          <!-- <em><span id="error-span">First Name cannot be empty</span></em> -->
-          <label><input type="email" placeholder="Email" autocomplete="username" id="email"/></label>
-          <!-- <em><span id="error-span">First Name cannot be empty</span></em> -->
-           <label><input type="password" placeholder="Password" autocomplete="current-password" /></label>
-          <!-- <em><span id="error-span">First Name cannot be empty</span></em> -->
 
-          <div class="confirm">
+          <label><input type="text" placeholder="First Name" class="first-name"/><i class="icon"></i></label>
+          <!-- The spans are for error states-->
+          <em><span  class="error-span"id="first-name">First Name cannot be empty</span></em>
+          
+          <label><input type="text" placeholder="Last Name" class="last-name" /></label>
+          <em><span  class="error-span"id="last-name">First Name cannot be empty</span></em>
+          
+          <label><input type="email" placeholder="Email" autocomplete="username" class="email"/></label>
+          <em><span  class="error-span"id="email">First Name cannot be empty</span></em>
+           
+          <label><input type="password" placeholder="Password" autocomplete="current-password" class="password" /></label>
+          <em><span class="error-span" id="password">First Name cannot be empty</span></em>
+
+          <div class="confirm" >
             <button type="submit">Claim your free trial</button>
-          <span>By clicking the button, you are agreeing to our</span>
+          <span id="confirm">By clicking the button, you are agreeing to our</span>
             <span class="bold" id="tas">Terms and Services</span>
           </div>
         </form>

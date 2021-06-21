@@ -96,6 +96,10 @@ margin-right: 5px;
 
 }
 
+span[class="error-span"] {
+  display: none;
+}
+
 label {
   display: flex;
   justify-content: space-evenly;
@@ -130,6 +134,13 @@ button {
   color: white;
   background-color: rgb(56, 204, 140);
   box-shadow: inset 0px -3px 0px 0px #39ba82;
+}
+
+button:hover {
+  background-color: rgba(56, 204, 140, 0.507);
+  box-shadow: inset 0px -3px 0px 0px #39ba8285;
+  cursor: pointer;
+
 }
 
 #tas {
@@ -175,18 +186,28 @@ flex-shrink: 0;
   padding-bottom: 25px;
 }
 
+.icon {
+  background: url(/images/icon-error.svg);
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  left: 27rem;
+  display: block;
+}
+
 .error .info-section{
   max-height: 500px;
 }
 
-.error #error-span {
+.error-span {
+  display: none;
   font-weight: 600;
   color:hsl(0, 100%, 74%);
   width: 25rem;
-  display: flex;
   flex-direction: row;
 justify-content: flex-end;
   font-size: 10px;
+  padding-top: 3px;
 }
 
 
@@ -231,7 +252,16 @@ input, button {
 }
 
 .footer {
-top: 500px;
+top: 550px;
+}
+
+.error #error-span{ 
+  width: 18rem;
+  font-size: 10px;
+}
+
+.icon {
+  left: 18rem;
 }
 
 }
