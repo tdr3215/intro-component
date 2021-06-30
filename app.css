@@ -173,7 +173,7 @@ flex-shrink: 0;
 
 
 .icon {
-  background: url(/images/icon-error.svg);
+  background: url(../images/icon-error.svg);
   position: absolute;
   height: 24px;
   width: 24px;
@@ -188,7 +188,7 @@ flex-shrink: 0;
 body {
   display: flex;
   flex-direction: column;
- background: url(./images/bg-intro-mobile.png);
+ background: url(../images/bg-intro-mobile.png);
  background-color: rgb(255, 122, 122);
  margin-bottom: 0;
   }
