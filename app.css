@@ -97,7 +97,7 @@ margin-right: 5px;
 }
 
 span[class="error-span"] {
-  display: none;
+  display: flex;
 }
 
 label {
@@ -200,7 +200,7 @@ flex-shrink: 0;
 }
 
 .error-span {
-  display: none;
+  display: flex;
   font-weight: 600;
   color:hsl(0, 100%, 74%);
   width: 25rem;
