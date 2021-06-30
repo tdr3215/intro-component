@@ -96,10 +96,6 @@ margin-right: 5px;
 
 }
 
-span[class="error-span"] {
-  display: none;
-}
-
 label {
   display: flex;
   justify-content: space-evenly;
@@ -174,17 +170,7 @@ button:hover {
 flex-shrink: 0;
 }
 
-/* Error Utility Classes */
 
-.error input{
-  /* display: none; */
-  border: 3px solid hsla(0, 100%, 74%, 0.788);
-}
-
-.error form{
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
 
 .icon {
   background: url(/images/icon-error.svg);
@@ -195,20 +181,6 @@ flex-shrink: 0;
   display: block;
 }
 
-.error .info-section{
-  max-height: 500px;
-}
-
-.error-span {
-  display: none;
-  font-weight: 600;
-  color:hsl(0, 100%, 74%);
-  width: 25rem;
-  flex-direction: row;
-justify-content: flex-end;
-  font-size: 10px;
-  padding-top: 3px;
-}
 
 
 @media all and (max-width:480px) {
@@ -255,10 +227,7 @@ input, button {
 top: 550px;
 }
 
-.error #error-span{ 
-  width: 18rem;
-  font-size: 10px;
-}
+
 
 .icon {
   left: 18rem;
