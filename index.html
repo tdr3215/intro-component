@@ -54,20 +54,20 @@
           <span class="bold" id="free">Try it free 7 days</span><span>then $20/mo. thereafter</span>
           </div>
        
-       <form action="#" class="input-card error" name="form">
+       <form action="#" class="input-card error" name="form" id="form">
 
-          <label><input type="text" placeholder="First Name" class="firstName" name="firstName"/><i class="icon"></i></label>
+         <div class="form-control error"> <label><input type="text" placeholder="First Name" class="firstName" name="firstName" id="firstName"/><i class="icon"></i></label>
           <!-- The spans are for error states-->
-          <em><span  class="error-span">First Name cannot be empty</span></em>
+          <em><small  class="error-small">Error Message</small></em></div>
           
-          <label><input type="text" placeholder="Last Name" class="last-name" name="lastName"/></label>
-          <em><span  class="error-span"id="last-name">Last Name cannot be empty</span></em>
+          <div class="form-control"><label><input type="text" placeholder="Last Name" class="last-name" name="lastName" id="lastName"/><i class="icon"></i></label>
+            <em><small  class="error-small">Error Message</small></em></div>
           
-          <label><input type="email" placeholder="Email" autocomplete="username" class="email" name="email"/></label>
-          <em><span  class="error-span"id="email">Looks like this is not an email!</span></em>
+          <div class="form-control"><label><input type="email" placeholder="Email" autocomplete="username" class="email" name="email" id="email"/><i class="icon"></i></label>
+          <em><small  class="error-small">Error Message</small></em></div>
            
-          <label><input type="password" placeholder="Password" autocomplete="current-password" class="password" name="password" /></label>
-          <em><span class="error-span" id="password">Password cannot be empty</span></em>
+          <div class="form-control"><label><input type="password" placeholder="Password" autocomplete="current-password" class="password" name="password" id="password"/><i class="icon"></i></label>
+            <em><small class="error-small" >Error Message</small></em></div>
 
           <div class="confirm" >
             <button type="submit">Claim your free trial</button>

@@ -123,6 +123,7 @@ button {
   border-radius: 5px;
 }
 
+
 input:focus{
   padding:0 1rem;
 }
@@ -176,9 +177,12 @@ flex-shrink: 0;
 
 /* Error Utility Classes */
 
-.error input{
-  /* display: none; */
-  border: 3px solid hsla(0, 100%, 74%, 0.788);
+.error .form-control{
+  height: 3rem;
+  width: 23rem;
+  border: 4px solid hsla(0, 100%, 74%, 0.788);
+  border-radius: 10px;
+  z-index: 1;
 }
 
 .error form{
@@ -187,6 +191,7 @@ flex-shrink: 0;
 }
 
 .icon {
+  /* visibility: hidden; */
   background: url(/images/icon-error.svg);
   position: absolute;
   height: 24px;
@@ -199,7 +204,8 @@ flex-shrink: 0;
   max-height: 500px;
 }
 
-.error-span {
+.error-small {
+  /* visibility: hidden; */
   display: flex;
   font-weight: 600;
   color:hsl(0, 100%, 74%);

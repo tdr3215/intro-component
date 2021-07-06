@@ -11,44 +11,52 @@ should say *"Looks like this is not an email"*
 
 
 
-//look into document.forms
+// select elements
 
-const form = document.querySelector('form');
+const form = document.getElementById('form');
+const firstName = document.getElementById('firstName');
+const lastName = document.getElementById('lastName');
+const email = document.getElementById('email');
+const password = document.getElementById('password');
 
-// let loginForm = document.forms.form
 
-// let email = loginForm.elements.email;
+const setErrorFor = function(input,message){
 
-const inputs = document.querySelector('input')
+}
 
-// console.log(inputs.textContent)
 
-console.log(document.form.lastName.value)
+const checkInputs = function(){
+    // get values from inputs
+    const firstNameValue = firstName.value.trim();
+    const lastNameValue = lastName.value.trim();
+   const emailValue =  email.value.trim();
+    const passwordValue = password.value.trim();
 
-function valid(){
-    
- if(document.form.firstName.value == ""){
-     alert("Please provide your name!");
-     document.form.firstName.focus();
-     return false;
- }
+    if(firstNameValue === ''){
+        //show error
+        //add error class
+        setErrorFor(firstName,'First Name cannot be empty')
+    }
+    else{
+        //return value
+        return firstNameValue;
+    }
+}
  
- if( document.form.lastName.value == ""){
-     console.log('hi');
-document.form.lastName.focus();
-return false;
- }
- }   
 
 
 
 
-form.addEventListener('submit', function(){
+form.addEventListener('submit', (e) => {
+
+    e.preventDefault();
+
+    checkInputs();
 //select the input
 
 //use function to check validity
 
-valid();
+
 })
 
 
