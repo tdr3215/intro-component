@@ -24,12 +24,19 @@ function setErrorFor(input,message){
 const formControl = input.parentElement;
 const small = formControl.querySelector('small');
 
-//add serror message inside small
+//add error message inside small
 small.innerText = message;
 
 //add error class
 formControl.className = 'form-control error';
 }
+
+
+function resetForm(input){
+    const formControl = input.parentElement;
+    //remove error class
+    formControl.className = 'form-control';
+    }
 
 function validEmail(email){
     const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -47,19 +54,28 @@ function validEmail(email){
     if(firstNameValue === ''){
         setErrorFor(firstName,'First Name cannot be empty')
     }
+    else{
+       resetForm(firstName); 
+    }
 
     if(lastNameValue === ''){
         setErrorFor(lastName,'Last Name cannot be empty');
+    }else{
+        resetForm(lastName);
     }
 
     if(emailValue === ''){
         setErrorFor(email,'Email cannot be empty');
     }else if(!validEmail(emailValue)){
         setErrorFor(email,'Looks like this is not an email!');
+    }else{
+        resetForm(email);
     }
 
     if(passwordValue === ''){
         setErrorFor(password,'Password cannot be empty');
+    }else{
+        resetForm(password);
     }
 }
  
