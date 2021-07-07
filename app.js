@@ -21,7 +21,14 @@ const password = document.getElementById('password');
 
 
 const setErrorFor = function(input,message){
+const formControl = input.parentElement;
+const small = formControl.querySelector('small');
 
+//add serror message inside small
+small.innerText = message;
+
+//add error class
+formControl.className = 'form-control error';
 }
 
 
