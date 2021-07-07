@@ -94,9 +94,7 @@ margin-right: 5px;
 
 }
 
-span[class="error-span"] {
-  display: flex;
-}
+
 
 label {
   display: flex;
@@ -125,6 +123,10 @@ input:focus{
   padding:0 1rem;
 }
 
+.form-control {
+  position: relative;
+}
+
 button {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
@@ -135,11 +137,15 @@ button {
 }
 
 button:hover {
+  cursor: pointer;
+}
+
+button:active{
   background-color: rgba(56, 204, 140, 0.507);
   box-shadow: inset 0px -3px 0px 0px #39ba8285;
-  cursor: pointer;
-
 }
+
+
 
 #tas {
   color: hsl(0, 100%, 74%);
@@ -186,14 +192,19 @@ form{
   padding-bottom: 25px;
 }
 
-.icon {
+i {
   visibility: hidden;
   background: url(/images/icon-error.svg);
   position: absolute;
   height: 24px;
   width: 24px;
-  left: 27rem;
+  bottom: 35px;
+  left: 22.5rem;
   display: block;
+}
+
+.form-control.error i{
+  visibility: visible;
 }
 
 .error .info-section{
@@ -210,6 +221,10 @@ form{
 justify-content: flex-end;
   font-size: 10px;
   padding-top: 3px;
+}
+
+.form-control.error .error-small{
+  visibility: visible;
 }
 
 

@@ -20,7 +20,7 @@ const email = document.getElementById('email');
 const password = document.getElementById('password');
 
 
-const setErrorFor = function(input,message){
+function setErrorFor(input,message){
 const formControl = input.parentElement;
 const small = formControl.querySelector('small');
 
@@ -29,10 +29,14 @@ small.innerText = message;
 
 //add error class
 formControl.className = 'form-control error';
+
+//change visibility
+
+
 }
 
 
-const checkInputs = function(){
+ function checkInputs(){
     // get values from inputs
     const firstNameValue = firstName.value.trim();
     const lastNameValue = lastName.value.trim();
@@ -43,10 +47,6 @@ const checkInputs = function(){
         //show error
         //add error class
         setErrorFor(firstName,'First Name cannot be empty')
-    }
-    else{
-        //return value
-        return firstNameValue;
     }
 }
  
