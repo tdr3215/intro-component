@@ -29,10 +29,11 @@ small.innerText = message;
 
 //add error class
 formControl.className = 'form-control error';
+}
 
-//change visibility
-
-
+function validEmail(email){
+    const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);    
 }
 
 
@@ -44,9 +45,21 @@ formControl.className = 'form-control error';
     const passwordValue = password.value.trim();
 
     if(firstNameValue === ''){
-        //show error
-        //add error class
         setErrorFor(firstName,'First Name cannot be empty')
+    }
+
+    if(lastNameValue === ''){
+        setErrorFor(lastName,'Last Name cannot be empty');
+    }
+
+    if(emailValue === ''){
+        setErrorFor(email,'Email cannot be empty');
+    }else if(!validEmail(emailValue)){
+        setErrorFor(email,'Looks like this is not an email!');
+    }
+
+    if(passwordValue === ''){
+        setErrorFor(password,'Password cannot be empty');
     }
 }
  
@@ -59,10 +72,6 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
 
     checkInputs();
-//select the input
-
-//use function to check validity
-
 
 })
 
