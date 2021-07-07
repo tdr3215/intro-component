@@ -54,7 +54,7 @@ h1 {
   flex: 1;
   flex-direction: column;
   position: relative;
-  height: 34rem;
+  height: 35rem;
   max-width: 500px;
   align-items: center;
   justify-content: space-evenly;
@@ -66,7 +66,7 @@ h1 {
   justify-content: center;
   align-items: center;
   background-color: rgb(96, 85, 165);
-  height: 50px;
+  height: 55px;
   width: 100%;
   margin-bottom: 20px;
   border-radius: 8px;
@@ -85,8 +85,6 @@ margin-right: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
   justify-content: space-evenly;
   flex: 1;
   text-align: center;
@@ -96,31 +94,37 @@ margin-right: 5px;
 
 }
 
+
+
 label {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  max-width: 400px;
-  /* line-height: 20px; */
 }
 
 ::placeholder {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   padding: 0 18px;
+  font-size: 16px;
 }
 
 input,
 button {
   font-weight: 400;
-  height: 3rem;
+  height: 3.5rem;
   width: 25rem;
   border: 0.5px solid rgba(83, 71, 71, 0.541);
   border-radius: 5px;
 }
 
+
 input:focus{
   padding:0 1rem;
+}
+
+.form-control {
+  position: relative;
 }
 
 button {
@@ -133,11 +137,15 @@ button {
 }
 
 button:hover {
+  cursor: pointer;
+}
+
+button:active{
   background-color: rgba(56, 204, 140, 0.507);
   box-shadow: inset 0px -3px 0px 0px #39ba8285;
-  cursor: pointer;
-
 }
+
+
 
 #tas {
   color: hsl(0, 100%, 74%);
@@ -149,6 +157,7 @@ button:hover {
 .confirm span {
   color: rgba(128, 128, 128, 0.514);
   padding-top:0.5rem;
+  font-size: 10px;
 }
 
 .confirm {
@@ -159,7 +168,6 @@ button:hover {
   font-size: 8px;
   font-weight: 600;
   line-height: 10px;
-  margin-top: 1rem;
   flex-wrap: wrap;
 }
 
@@ -171,16 +179,52 @@ flex-shrink: 0;
 }
 
 
+.form-control.error input{
+  height: 3rem;
+  width: 25rem;
+  border: 3px solid hsla(0, 100%, 74%, 0.788);
+  border-radius: 5px;
+}
 
-.icon {
+form{
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+i {
+  visibility: hidden;
   background: url(/images/icon-error.svg);
   position: absolute;
   height: 24px;
   width: 24px;
-  left: 27rem;
+  bottom: 35px;
+  left: 22.5rem;
   display: block;
 }
 
+.form-control.error i{
+  visibility: visible;
+}
+
+.error .info-section{
+  max-height: 500px;
+}
+
+.error-small {
+  visibility: hidden;
+  display: flex;
+  font-weight: 600;
+  color:hsl(0, 100%, 74%);
+  width: 25rem;
+  flex-direction: row;
+justify-content: flex-end;
+  font-size: 10px;
+  padding-top: 3px;
+}
+
+.form-control.error .error-small{
+  visibility: visible;
+}
 
 
 @media all and (max-width:480px) {
@@ -208,29 +252,47 @@ p {
 .trial-card {
   height: 80px;
   box-shadow: 0px 8px 0px 0px rgba(5, 4, 4, 0.16);
+  text-align: center;
 }
 
 .intro-card{
   height: 18rem;
   text-align: center;
   line-height: 30px;
-align-items: center;
 justify-content: space-evenly;
 margin: auto 0;
+}
+
+#free {
+font-weight: 700;
 }
 
 input, button {
   width: 18rem;
 }
 
+#confirm{
+  font-size: 11px;
+}
+
+#tas{
+margin: 0;
+}
+
 .footer {
 top: 550px;
 }
 
+.form-control.error input{
+  width: 18rem;
+}
 
+.error-small {
+  width:18rem;
+}
 
 .icon {
-  left: 18rem;
+  left: 16rem;
 }
 
 }
