@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-html , body{
+html, body {
   height: 100vh;
 }
 
@@ -13,7 +13,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   background-image: url("images/bg-intro-desktop.png");
-  background-color: rgb(255, 122, 122);
+  background-color: #ff7a7a;
   box-sizing: border-box;
 }
 
@@ -30,7 +30,7 @@ h1 {
   height: 100%;
   position: relative;
   display: flex;
-  flex:1 0 auto;
+  flex: 1 0 auto;
   justify-content: center;
   align-items: center;
 }
@@ -65,7 +65,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(96, 85, 165);
+  background-color: #6055a5;
   height: 55px;
   width: 100%;
   margin-bottom: 20px;
@@ -76,8 +76,8 @@ h1 {
   color: white;
 }
 
-#free{
-margin-right: 5px;
+#free {
+  margin-right: 5px;
 }
 
 .input-card {
@@ -91,10 +91,7 @@ margin-right: 5px;
   border-radius: 8px;
   width: 100%;
   box-shadow: 0px 8px 0px 0px rgba(5, 4, 4, 0.16);
-
 }
-
-
 
 label {
   display: flex;
@@ -118,9 +115,8 @@ button {
   border-radius: 5px;
 }
 
-
-input:focus{
-  padding:0 1rem;
+input:focus {
+  padding: 0 1rem;
 }
 
 .form-control {
@@ -132,7 +128,7 @@ button {
   font-weight: 600;
   text-transform: uppercase;
   color: white;
-  background-color: rgb(56, 204, 140);
+  background-color: #38cc8c;
   box-shadow: inset 0px -3px 0px 0px #39ba82;
 }
 
@@ -140,23 +136,20 @@ button:hover {
   cursor: pointer;
 }
 
-button:active{
+button:active {
   background-color: rgba(56, 204, 140, 0.507);
   box-shadow: inset 0px -3px 0px 0px #39ba8285;
 }
 
-
-
 #tas {
-  color: hsl(0, 100%, 74%);
+  color: #ff7a7a;
   margin-left: 3px;
   font-weight: 700;
 }
 
-
 .confirm span {
   color: rgba(128, 128, 128, 0.514);
-  padding-top:0.5rem;
+  padding-top: 0.5rem;
   font-size: 10px;
 }
 
@@ -171,22 +164,20 @@ button:active{
   flex-wrap: wrap;
 }
 
-
 .footer {
-  position:relative;
+  position: relative;
   width: 100%;
-flex-shrink: 0;
+  flex-shrink: 0;
 }
 
-
-.form-control.error input{
+.form-control.error input {
   height: 3rem;
   width: 25rem;
-  border: 3px solid hsla(0, 100%, 74%, 0.788);
+  border: 3px solid rgba(255, 122, 122, 0.788);
   border-radius: 5px;
 }
 
-form{
+form {
   padding-top: 25px;
   padding-bottom: 25px;
 }
@@ -202,11 +193,11 @@ i {
   display: block;
 }
 
-.form-control.error i{
+.form-control.error i {
   visibility: visible;
 }
 
-.error .info-section{
+.error .info-section {
   max-height: 500px;
 }
 
@@ -214,85 +205,84 @@ i {
   visibility: hidden;
   display: flex;
   font-weight: 600;
-  color:hsl(0, 100%, 74%);
+  color: #ff7a7a;
   width: 25rem;
   flex-direction: row;
-justify-content: flex-end;
+  justify-content: flex-end;
   font-size: 10px;
   padding-top: 3px;
 }
 
-.form-control.error .error-small{
+.form-control.error .error-small {
   visibility: visible;
 }
 
-
-@media all and (max-width:480px) {
- 
-body {
-  display: flex;
-  flex-direction: column;
- background-image: url("images/bg-intro-mobile.png");
- background-color: rgb(255, 122, 122);
- margin-bottom: 0;
+@media all and (max-width: 480px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    background-image: url("images/bg-intro-mobile.png");
+    background-color: #ff7a7a;
+    margin-bottom: 0;
   }
 
-.main {
-  display: block;
+  .main {
+    display: block;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .trial-card {
+    height: 80px;
+    box-shadow: 0px 8px 0px 0px rgba(5, 4, 4, 0.16);
+    text-align: center;
+  }
+
+  .intro-card {
+    height: 18rem;
+    text-align: center;
+    line-height: 30px;
+    justify-content: space-evenly;
+    margin: auto 0;
+  }
+
+  #free {
+    font-weight: 700;
+  }
+
+  input, button {
+    width: 18rem;
+  }
+
+  #confirm {
+    font-size: 11px;
+  }
+
+  #tas {
+    margin: 0;
+  }
+
+  .footer {
+    top: 550px;
+  }
+
+  .form-control.error input {
+    width: 18rem;
+  }
+
+  .error-small {
+    width: 18rem;
+  }
+
+  .icon {
+    left: 16rem;
+  }
 }
 
-h1 {
-  font-size:26px;
-}
-
-p {
-  font-size: 14px;
-}
-
-.trial-card {
-  height: 80px;
-  box-shadow: 0px 8px 0px 0px rgba(5, 4, 4, 0.16);
-  text-align: center;
-}
-
-.intro-card{
-  height: 18rem;
-  text-align: center;
-  line-height: 30px;
-justify-content: space-evenly;
-margin: auto 0;
-}
-
-#free {
-font-weight: 700;
-}
-
-input, button {
-  width: 18rem;
-}
-
-#confirm{
-  font-size: 11px;
-}
-
-#tas{
-margin: 0;
-}
-
-.footer {
-top: 550px;
-}
-
-.form-control.error input{
-  width: 18rem;
-}
-
-.error-small {
-  width:18rem;
-}
-
-.icon {
-  left: 16rem;
-}
-
-}
+/*# sourceMappingURL=style.css.map */
